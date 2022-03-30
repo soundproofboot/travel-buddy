@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/soundproofboot/travel-buddy/issues"
   },
-  "homepage": "https://github.com/soundproofboot/travel-buddy#readme"
+  "homepage": "https://github.com/soundproofboot/travel-buddy#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "morgan": "^1.10.0"
+  }
 }
