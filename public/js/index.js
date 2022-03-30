@@ -1,6 +1,11 @@
 let transactions = [];
 let myChart;
 
+
+window.addEventListener('offline', function() {
+  alert('You are offline. Any entries you make will be saved when your connection returns.'); 
+})
+
 fetch("/api/transaction")
   .then(response => {
     return response.json();
@@ -151,3 +156,7 @@ document.querySelector("#add-btn").onclick = function() {
 document.querySelector("#sub-btn").onclick = function() {
   sendTransaction(false);
 };
+
+window.addEventListener('online', function() {
+  console.log('you are online AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
+})
